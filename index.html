@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Treinador de Musculação — Landing page</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E0E0E}
+a{color:#F4F2EE}a:hover{color:#FFFFFF}
+</style>
+</helmet>
+<div style="background: #0E0E0E; color: #F4F2EE; font-family: Inter, system-ui, sans-serif; min-height: 100vh">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #262626">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px" aria-label="Principal">
+<a href="#inicio" style="display: flex; align-items: center; gap: 14px; text-decoration: none">
+<img src="./assets/0e54950f185eef1f1555363ba398289f.png" alt="Logo Fabiano — Evolução sem terrorismo" style="height: 76px; width: auto; display: block">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A3A3A3">Treinador</span><span style="font-family: Anton, Impact, sans-serif; font-size: 24px; line-height: 1.05; letter-spacing: 0.03em; text-transform: uppercase; color: #F4F2EE">Fabiano Leonel</span></span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; font-weight: 500">
+<a href="#resultados" style="text-decoration: none; color: #C9C7C2">Resultados</a>
+<a href="#como-funciona" style="text-decoration: none; color: #C9C7C2">Como funciona</a>
+<a href="#planos" style="text-decoration: none; color: #C9C7C2">Planos</a>
+<a href="#duvidas" style="text-decoration: none; color: #C9C7C2">Dúvidas</a>
+<a href="#planos" style="text-decoration: none; background: {{accent}}; color: #0E0E0E; font-weight: 700; padding: 12px 20px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Quero começar</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="inicio" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 96px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: {{accent}}">Consultoria online e presencial</p>
+<h1 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(48px, 7vw, 92px); line-height: 0.98; text-transform: uppercase; letter-spacing: 0.01em">Evolução<br>sem terrorismo.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C9C7C2; max-width: 520px">Treinador formado pela CBMF, com a experiência de quem aplica o método no próprio corpo antes de passar para os alunos. Treino com técnica, constância e sem fórmulas milagrosas — para hipertrofia, emagrecimento ou condicionamento.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#planos" style="text-decoration: none; background: {{accent}}; color: #0E0E0E; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Ver planos</a>
+<a href="#resultados" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Ver resultados</a>
+<a href="#como-funciona" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Como funciona</a>
+</div>
+</div>
+<div style="position: relative">
+<img src="./assets/fde046340f34f28235fc913660d244cf.jpg" alt="Fabiano, personal trainer" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 30% center; border-radius: 20px; border: 1px solid #2A2A2A; box-sizing: border-box">
+<div style="position: absolute; left: -16px; bottom: 32px; background: #F4F2EE; color: #0E0E0E; border-radius: 14px; padding: 16px 20px; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 12px 32px rgba(0,0,0,0.4)">
+<span style="font-size: 13px; font-weight: 600; color: #4A4A4A">Consultoria presencial</span>
+<span style="font-size: 18px; font-weight: 700">Garanta já sua vaga</span>
+<span style="font-size: 13px; font-weight: 600; color: #B91C1C">Vagas limitadas por horário</span>
+</div>
+</div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados" style="background: #141414; border-top: 1px solid #262626; border-bottom: 1px solid #262626">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: {{accent}}">Evolução dos alunos</p>
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1.02; text-transform: uppercase">Antes e depois de verdade</h2>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3A3A3; max-width: 420px">Resultados de alunos reais, publicados com autorização. Cada corpo responde num ritmo — o que não muda é o método.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+
+<article style="background: #1A1A1A; border: 1px solid #2A2A2A; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: #2A2A2A">
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: #0E0E0E; color: #F4F2EE; padding: 4px 10px; border-radius: 999px">ANTES</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: {{accent}}; color: #0E0E0E; padding: 4px 10px; border-radius: 999px">DEPOIS</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 700">[Nome do aluno]</h3><span style="font-size: 14px; color: #A3A3A3">[X] semanas</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">−[X] kg de gordura</span>
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">Objetivo: emagrecimento</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C7C2">“[Depoimento curto do aluno sobre a experiência.]”</p>
+</div>
+</article>
+
+<article style="background: #1A1A1A; border: 1px solid #2A2A2A; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: #2A2A2A">
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: #0E0E0E; color: #F4F2EE; padding: 4px 10px; border-radius: 999px">ANTES</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: {{accent}}; color: #0E0E0E; padding: 4px 10px; border-radius: 999px">DEPOIS</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 700">[Nome do aluno]</h3><span style="font-size: 14px; color: #A3A3A3">[X] semanas</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">+[X] kg de massa magra</span>
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">Objetivo: hipertrofia</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C7C2">“[Depoimento curto do aluno sobre a experiência.]”</p>
+</div>
+</article>
+
+<article style="background: #1A1A1A; border: 1px solid #2A2A2A; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: #2A2A2A">
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: #0E0E0E; color: #F4F2EE; padding: 4px 10px; border-radius: 999px">ANTES</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+<div style="aspect-ratio: 3 / 4; background: #202020; display: flex; flex-direction: column; justify-content: space-between; padding: 12px; box-sizing: border-box"><span style="align-self: flex-start; font-size: 12px; font-weight: 700; background: {{accent}}; color: #0E0E0E; padding: 4px 10px; border-radius: 999px">DEPOIS</span><span style="font-size: 13px; color: #8A8A8A; text-align: center; padding-bottom: 40%">[Foto]</span></div>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><h3 style="margin: 0; font-size: 20px; font-weight: 700">[Nome do aluno]</h3><span style="font-size: 14px; color: #A3A3A3">[X] semanas</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">+[X] kg no supino</span>
+<span style="font-size: 13px; font-weight: 600; border: 1px solid #3A3A3A; padding: 6px 12px; border-radius: 999px">Objetivo: força</span>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C7C2">“[Depoimento curto do aluno sobre a experiência.]”</p>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: {{accent}}">Como funciona</p>
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1.02; text-transform: uppercase">Do primeiro contato ao resultado</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3A3A3">Um processo simples, em quatro etapas, que se repete a cada ciclo de treino.</p>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<li style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #121212">
+<span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1; color: {{accent}}">01</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Avaliação inicial</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Preenchimento de uma anamnese inicial sobre seu objetivo, rotina, histórico de treino e lesões, mais fotos e medidas de referência.</p>
+</li>
+<li style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #121212">
+<span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1; color: {{accent}}">02</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Plano personalizado</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Você recebe um treino montado para o seu nível, seus dias disponíveis e o equipamento que tem.</p>
+</li>
+<li style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #121212">
+<span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1; color: {{accent}}">03</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Acompanhamento</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Avaliação mensal, correção de execução por vídeo e suporte via WhatsApp para tirar dúvidas.</p>
+</li>
+<li style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #121212">
+<span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1; color: {{accent}}">04</span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Reavaliação e ajustes</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">A cada [X] semanas, comparamos a evolução e ajustamos cargas, volume e divisão do treino.</p>
+</li>
+</ol>
+</section>
+
+<!-- PLANOS -->
+<section id="planos" style="background: #141414; border-top: 1px solid #262626; border-bottom: 1px solid #262626">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: {{accent}}">Planos e preços</p>
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1.02; text-transform: uppercase">Escolha o seu ritmo</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3A3A3">Dois formatos de consultoria: online, de qualquer lugar, ou presencial, lado a lado no treino.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid #2A2A2A">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; letter-spacing: 0.01em">Consultoria online</h3></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3; max-width: 460px">Treino no app, avaliação mensal e suporte via WhatsApp. Quanto mais longo o plano, menor o valor por mês.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; align-items: stretch">
+
+<div style="border: 1px solid #2A2A2A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 24px; background: #1A1A1A">
+<div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 700">Mensal</h3><p style="margin: 0; font-size: 15px; color: #A3A3A3">Para experimentar o método.</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1">R$ 150</span><span style="font-size: 15px; color: #A3A3A3">/mês</span></div><span style="font-size: 14px; color: #C9C7C2">R$ 150 no total · valor de referência</span></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #D6D4CF; flex-grow: 1">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Treino personalizado no app</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Avaliação mensal</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Suporte via WhatsApp</li>
+</ul>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20*Mensal*%20(R%24%20150%20no%20total).%20Pode%20me%20passar%20os%20pr%C3%B3ximos%20passos%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 999px; text-align: center; min-height: 52px; box-sizing: border-box">Assinar mensal</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 24px; background: #1A1A1A">
+<div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 700">Trimestral</h3><p style="margin: 0; font-size: 15px; color: #A3A3A3">Tempo suficiente para ver mudança.</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1">R$ 133,33</span><span style="font-size: 15px; color: #A3A3A3">/mês</span></div><span style="font-size: 14px; color: #C9C7C2">R$ 400 no total · <strong style="color: {{accent}}">economia de 11%</strong></span></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #D6D4CF; flex-grow: 1">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Treino personalizado no app</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Avaliação mensal</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Suporte via WhatsApp</li>
+</ul>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20*Trimestral*%20(R%24%20400%20no%20total).%20Pode%20me%20passar%20os%20pr%C3%B3ximos%20passos%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 999px; text-align: center; min-height: 52px; box-sizing: border-box">Assinar trimestral</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 24px; background: #1A1A1A">
+<div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 700">Semestral</h3><p style="margin: 0; font-size: 15px; color: #A3A3A3">Para quem quer transformação.</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1">R$ 100</span><span style="font-size: 15px; color: #A3A3A3">/mês</span></div><span style="font-size: 14px; color: #C9C7C2">R$ 600 no total · <strong style="color: {{accent}}">economia de 33%</strong></span></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #D6D4CF; flex-grow: 1">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Treino personalizado no app</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Avaliação mensal</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Suporte via WhatsApp</li>
+</ul>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20*Semestral*%20(R%24%20600%20no%20total).%20Pode%20me%20passar%20os%20pr%C3%B3ximos%20passos%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 999px; text-align: center; min-height: 52px; box-sizing: border-box">Assinar semestral</a>
+</div>
+
+<div style="border: 2px solid {{accent}}; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 24px; background: #1E1E1E; position: relative">
+<span style="position: absolute; top: -14px; left: 28px; background: {{accent}}; color: #0E0E0E; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; padding: 6px 12px; border-radius: 999px">MAIOR DESCONTO</span>
+<div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 22px; font-weight: 700">Anual</h3><p style="margin: 0; font-size: 15px; color: #A3A3A3">O melhor valor, um ano inteiro de evolução.</p></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: Anton, Impact, sans-serif; font-size: 48px; line-height: 1">R$ 91,67</span><span style="font-size: 15px; color: #A3A3A3">/mês</span></div><span style="font-size: 14px; color: #C9C7C2">R$ 1.100 no total · <strong style="color: {{accent}}">economia de 39%</strong></span></div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #D6D4CF; flex-grow: 1">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Treino personalizado no app</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Avaliação mensal</li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px; color: {{accent}}"><polyline points="20 6 9 17 4 12"></polyline></svg>Suporte via WhatsApp</li>
+</ul>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20*Anual*%20(R%24%201.100%20no%20total).%20Pode%20me%20passar%20os%20pr%C3%B3ximos%20passos%3F" target="_blank" rel="noopener" style="text-decoration: none; background: {{accent}}; color: #0E0E0E; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 999px; text-align: center; min-height: 52px; box-sizing: border-box">Assinar anual</a>
+</div>
+
+</div>
+</div>
+
+<!-- PRESENCIAL -->
+<div style="display: flex; flex-direction: column; gap: 28px; padding-top: 24px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid #2A2A2A">
+<div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 36px; text-transform: uppercase; letter-spacing: 0.01em">Consultoria presencial</h3></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3; max-width: 460px">Na Academia Energia do Corpo, em Canoas. Individual ou em dupla, com treinos no app, avaliação mensal e suporte via WhatsApp inclusos.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px">
+
+<div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #1A1A1A">
+<div style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: {{accent}}">1x</span><span style="font-size: 15px; font-weight: 600">por semana</span></div>
+<span style="font-size: 14px; color: #A3A3A3">~4 aulas por mês</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid #2A2A2A"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #A3A3A3">INDIVIDUAL</span><div style="display: flex; align-items: baseline; gap: 4px"><span style="font-family: Anton, Impact, sans-serif; font-size: 34px; line-height: 1">R$ 280</span><span style="font-size: 14px; color: #A3A3A3">/mês</span></div></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px; padding: 10px; border-radius: 10px; background: #242424"><span style="font-size: 13px; font-weight: 600; color: #C9C7C2; white-space: nowrap">Em dupla</span><span style="font-size: 15px; font-weight: 700; white-space: nowrap">R$ 300<span style="font-size: 12px; font-weight: 500; color: #A3A3A3">/mês</span></span></div>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20agendar%20a%20consultoria%20presencial%20de%20*1x%20por%20semana*%20na%20Academia%20Energia%20do%20Corpo.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 999px; text-align: center; min-height: 46px; box-sizing: border-box">Agendar</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #1A1A1A">
+<div style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: {{accent}}">2x</span><span style="font-size: 15px; font-weight: 600">por semana</span></div>
+<span style="font-size: 14px; color: #A3A3A3">~8 aulas por mês</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid #2A2A2A"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #A3A3A3">INDIVIDUAL</span><div style="display: flex; align-items: baseline; gap: 4px"><span style="font-family: Anton, Impact, sans-serif; font-size: 34px; line-height: 1">R$ 520</span><span style="font-size: 14px; color: #A3A3A3">/mês</span></div></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px; padding: 10px; border-radius: 10px; background: #242424"><span style="font-size: 13px; font-weight: 600; color: #C9C7C2; white-space: nowrap">Em dupla</span><span style="font-size: 15px; font-weight: 700; white-space: nowrap">R$ 600<span style="font-size: 12px; font-weight: 500; color: #A3A3A3">/mês</span></span></div>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20agendar%20a%20consultoria%20presencial%20de%20*2x%20por%20semana*%20na%20Academia%20Energia%20do%20Corpo.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 999px; text-align: center; min-height: 46px; box-sizing: border-box">Agendar</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #1A1A1A">
+<div style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: {{accent}}">3x</span><span style="font-size: 15px; font-weight: 600">por semana</span></div>
+<span style="font-size: 14px; color: #A3A3A3">~12 aulas por mês</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid #2A2A2A"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #A3A3A3">INDIVIDUAL</span><div style="display: flex; align-items: baseline; gap: 4px"><span style="font-family: Anton, Impact, sans-serif; font-size: 34px; line-height: 1">R$ 720</span><span style="font-size: 14px; color: #A3A3A3">/mês</span></div></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px; padding: 10px; border-radius: 10px; background: #242424"><span style="font-size: 13px; font-weight: 600; color: #C9C7C2; white-space: nowrap">Em dupla</span><span style="font-size: 15px; font-weight: 700; white-space: nowrap">R$ 800<span style="font-size: 12px; font-weight: 500; color: #A3A3A3">/mês</span></span></div>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20agendar%20a%20consultoria%20presencial%20de%20*3x%20por%20semana*%20na%20Academia%20Energia%20do%20Corpo.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 999px; text-align: center; min-height: 46px; box-sizing: border-box">Agendar</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #1A1A1A">
+<div style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: {{accent}}">4x</span><span style="font-size: 15px; font-weight: 600">por semana</span></div>
+<span style="font-size: 14px; color: #A3A3A3">~16 aulas por mês</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid #2A2A2A"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #A3A3A3">INDIVIDUAL</span><div style="display: flex; align-items: baseline; gap: 4px"><span style="font-family: Anton, Impact, sans-serif; font-size: 34px; line-height: 1">R$ 880</span><span style="font-size: 14px; color: #A3A3A3">/mês</span></div></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px; padding: 10px; border-radius: 10px; background: #242424"><span style="font-size: 13px; font-weight: 600; color: #C9C7C2; white-space: nowrap">Em dupla</span><span style="font-size: 15px; font-weight: 700; white-space: nowrap">R$ 1.000<span style="font-size: 12px; font-weight: 500; color: #A3A3A3">/mês</span></span></div>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20agendar%20a%20consultoria%20presencial%20de%20*4x%20por%20semana*%20na%20Academia%20Energia%20do%20Corpo.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 999px; text-align: center; min-height: 46px; box-sizing: border-box">Agendar</a>
+</div>
+
+<div style="border: 1px solid #2A2A2A; border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 18px; background: #1A1A1A">
+<div style="display: flex; align-items: baseline; gap: 8px"><span style="font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: {{accent}}">5x</span><span style="font-size: 15px; font-weight: 600">por semana</span></div>
+<span style="font-size: 14px; color: #A3A3A3">~20 aulas por mês</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid #2A2A2A"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #A3A3A3">INDIVIDUAL</span><div style="display: flex; align-items: baseline; gap: 4px"><span style="font-family: Anton, Impact, sans-serif; font-size: 34px; line-height: 1">R$ 1.000</span><span style="font-size: 14px; color: #A3A3A3">/mês</span></div></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 6px; padding: 10px; border-radius: 10px; background: #242424"><span style="font-size: 13px; font-weight: 600; color: #C9C7C2; white-space: nowrap">Em dupla</span><span style="font-size: 15px; font-weight: 700; white-space: nowrap">R$ 1.200<span style="font-size: 12px; font-weight: 500; color: #A3A3A3">/mês</span></span></div>
+<a href="https://wa.me/5551993326235?text=Ol%C3%A1!%20Quero%20agendar%20a%20consultoria%20presencial%20de%20*5x%20por%20semana*%20na%20Academia%20Energia%20do%20Corpo.%20Quais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 700; font-size: 15px; padding: 12px; border-radius: 999px; text-align: center; min-height: 46px; box-sizing: border-box">Agendar</a>
+</div>
+
+</div>
+</div>
+
+<!-- COMO FUNCIONA A PRECIFICAÇÃO -->
+<div style="border: 1px solid #2A2A2A; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; gap: 28px; background: #0E0E0E">
+<h3 style="margin: 0; font-size: 24px; font-weight: 700">Como funciona a precificação</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><h4 style="margin: 0; font-size: 16px; font-weight: 700; color: {{accent}}">Pagamento</h4><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">O pagamento pode ser feito via Pix ou em dinheiro, de forma simples e direta. No online, o valor do plano escolhido é pago no início do período; no presencial, a mensalidade é paga no começo de cada mês.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><h4 style="margin: 0; font-size: 16px; font-weight: 700; color: {{accent}}">Desconto por período</h4><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">No online, o valor mensal cai conforme o período: trimestral 11%, semestral 33% e anual 39% de economia em relação ao mensal.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><h4 style="margin: 0; font-size: 16px; font-weight: 700; color: {{accent}}">Renovação</h4><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Ao fim do período você escolhe se renova, troca de plano ou pausa. Sem renovação automática.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><h4 style="margin: 0; font-size: 16px; font-weight: 700; color: {{accent}}">Presencial</h4><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Cobrado por mês, conforme a frequência semanal (1x a 5x), individual ou em dupla. Aulas de 1 hora; horários sujeitos à disponibilidade.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DÚVIDAS FREQUENTES -->
+<section id="duvidas" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: {{accent}}">Dúvidas frequentes</p>
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1.02; text-transform: uppercase">Perguntas que todo aluno faz</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #A3A3A3">Não encontrou a sua? Me chama e eu respondo pessoalmente.</p>
+<a href="#inicio" style="align-self: flex-start; margin-top: 8px; text-decoration: none; border: 1px solid #4A4A4A; color: #F4F2EE; font-weight: 600; font-size: 16px; padding: 14px 24px; border-radius: 999px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center">Falar no WhatsApp</a>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #2A2A2A">
+<sc-for list="{{faqs}}" as="item" hint-placeholder-count="6">
+<div style="border-bottom: 1px solid #2A2A2A">
+<h3 style="margin: 0">
+<button type="button" onClick="{{item.toggle}}" aria-expanded="{{item.expanded}}" style="width: 100%; background: none; border: none; color: #F4F2EE; font-family: Inter, system-ui, sans-serif; font-size: 18px; font-weight: 600; text-align: left; padding: 24px 0; min-height: 64px; display: flex; justify-content: space-between; align-items: center; gap: 20px; cursor: pointer">
+<span>{{item.q}}</span>
+<span style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 999px; border: 1px solid #3A3A3A; display: flex; align-items: center; justify-content: center; background: {{item.iconBg}}; color: {{item.iconColor}}">
+<sc-if value="{{item.isOpen}}" hint-placeholder-val="{{ false }}">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+</sc-if>
+<sc-if value="{{item.isClosed}}" hint-placeholder-val="{{ true }}">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+</sc-if>
+</span>
+</button>
+</h3>
+<sc-if value="{{item.isOpen}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 0 56px 24px 0; font-size: 16px; line-height: 1.65; color: #A3A3A3">{{item.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- TIRE SUA DÚVIDA -->
+<section id="tire-sua-duvida" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px">
+<div style="border: 1px solid #2A2A2A; border-radius: 24px; padding: 40px; background: #1A1A1A; display: flex; flex-direction: column; gap: 20px; max-width: 720px; margin: 0 auto">
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(28px, 4vw, 40px); line-height: 1.05; text-transform: uppercase">Não encontrou sua dúvida? Digite aqui</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3">Escreva sua pergunta e ela será aberta no WhatsApp, pronta para enviar.</p>
+<label for="duvida-msg" style="font-size: 14px; font-weight: 600; color: #C9C7C2">Sua mensagem</label>
+<textarea id="duvida-msg" rows="5" placeholder="Digite aqui a sua dúvida..." style="width: 100%; box-sizing: border-box; background: #0E0E0E; border: 1px solid #3A3A3A; border-radius: 14px; color: #F4F2EE; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.5; padding: 16px; resize: vertical"></textarea>
+<button type="button" onClick="{{sendDuvida}}" style="align-self: flex-start; background: {{accent}}; color: #0E0E0E; border: none; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 16px; padding: 16px 32px; border-radius: 999px; min-height: 52px; cursor: pointer">Enviar</button>
+</div>
+</section>
+
+<!-- CTA FINAL + RODAPÉ -->
+<footer style="border-top: 1px solid #262626">
+<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 56px">
+<div style="background: {{accent}}; color: #0E0E0E; border-radius: 24px; padding: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 28px">
+<h2 style="margin: 0; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: clamp(32px, 4.5vw, 52px); line-height: 1.02; text-transform: uppercase; max-width: 640px">Pronto para começar a sua evolução?</h2>
+<a href="#planos" style="text-decoration: none; background: #0E0E0E; color: #F4F2EE; font-weight: 700; font-size: 16px; padding: 18px 30px; border-radius: 999px; min-height: 56px; box-sizing: border-box; display: inline-flex; align-items: center">Agendar avaliação</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #A3A3A3">
+<span style="display: flex; align-items: center; gap: 16px"><img src="./assets/0e54950f185eef1f1555363ba398289f.png" alt="Logo Fabiano" style="height: 56px; width: auto; display: block">© 2026 Fabiano · CBMF [número]</span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="https://instagram.com" style="color: #C9C7C2">Instagram</a>
+<a href="https://wa.me/" style="color: #C9C7C2">WhatsApp</a>
+<a href="mailto:contato@exemplo.com" style="color: #C9C7C2">[seu@email.com]</a>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FF3B3B","options":["#FF3B3B","#C6F432","#FF6B2C","#F4F2EE"]},"$preview":{"width":1440,"height":5900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: 0 };
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#FF3B3B';
+    const data = [
+      { q: 'Preciso ter experiência com musculação?', a: 'Não. O treino é montado a partir do seu nível atual, seja você iniciante ou avançado. Na avaliação inicial entendemos seu histórico e começamos de onde você está.' },
+      { q: 'A consultoria é online ou presencial?', a: 'A consultoria é online: você recebe o treino no app, envia vídeos para correção e fala comigo pelo WhatsApp. Também há a consultoria presencial na Academia Energia do Corpo, em Canoas, de 1 a 5 vezes por semana.' },
+      { q: 'Em quanto tempo vejo resultado?', a: 'Depende do objetivo, da constância e da alimentação. A maioria dos alunos percebe diferença nas primeiras semanas, e as reavaliações mostram a evolução com fotos e medidas.' },
+      { q: 'Posso treinar em casa?', a: 'Sim. O plano é adaptado ao equipamento que você tem — academia completa, academia de condomínio ou só alguns halteres em casa.' },
+      { q: 'O plano inclui dieta?', a: 'Não. O plano inclui apenas o acompanhamento de treino. A dieta não faz parte do serviço.' },
+      { q: 'Posso cancelar ou trocar de plano?', a: '[Explique sua política: prazo para cancelamento, reembolso proporcional e como funciona a troca de plano.]' }
+    ];
+    const faqs = data.map((f, i) => {
+      const isOpen = this.state.open === i;
+      return {
+        q: f.q,
+        a: f.a,
+        isOpen,
+        isClosed: !isOpen,
+        expanded: isOpen ? 'true' : 'false',
+        iconBg: isOpen ? accent : 'transparent',
+        iconColor: isOpen ? '#0E0E0E' : '#F4F2EE',
+        toggle: () => this.setState({ open: isOpen ? -1 : i })
+      };
+    });
+    const sendDuvida = () => {
+      const field = document.getElementById('duvida-msg');
+      const text = field ? field.value.trim() : '';
+      if (!text) { if (field) field.focus(); return; }
+      window.open('https://wa.me/5551993326235?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    };
+    return { accent, faqs, sendDuvida };
+  }
+}
+</script>
+</body>
+</html>
